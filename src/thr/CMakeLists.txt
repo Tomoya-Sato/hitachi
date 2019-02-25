@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   sensor_msgs
   geometry_msgs
+  nav_msgs
 )
 
 SET(CMAKE_CXX_FLAGS "-std=c++11 -g -Wall ${CMAKE_CXX_FLAGS}")
@@ -76,6 +77,7 @@ generate_messages(
   std_msgs
   sensor_msgs
   geometry_msgs
+  nav_msgs
 )
 
 ################################################
@@ -208,3 +210,6 @@ target_link_libraries(pub ${catkin_LIBRARIES})
 
 add_executable(time_measure src/time.cpp)
 target_link_libraries(time_measure ${catkin_LIBRARIES})
+
+add_executable(points_id src/points_id.cpp)
+target_link_libraries(points_id ${catkin_LIBRARIES})
