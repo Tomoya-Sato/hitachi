@@ -86,6 +86,7 @@ int main(int argc, char *argv[]) {
         private_nh.setParam("points_raw_number", points_raw);
         private_nh.setParam("filtered_points_number", filtered_points);
         private_nh.setParam("ndt_pose_number", ndt_pose);
+
     }
 
     return 0; 
