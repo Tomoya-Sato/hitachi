@@ -170,3 +170,6 @@ target_link_libraries(lidar_publisher ${catkin_LIBRARIES})
 
 add_executable(clock_server src/clockserver.cpp)
 target_link_libraries(clock_server ${catkin_LIBRARIES})
+
+add_executable(const_bag_maker src/makebag.cpp)
+target_link_libraries(const_bag_maker ${catkin_LIBRARIES})

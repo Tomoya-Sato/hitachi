@@ -41,13 +41,13 @@ int main(int argc, char *argv[])
     geometry_msgs::PoseStamped goalPos;
 
     goalPos.header.frame_id = "world";
-    goalPos.pose.position.x = -58.4993209839;
-    goalPos.pose.position.y = 14.6826095581;
+    goalPos.pose.position.x = -39.47;
+    goalPos.pose.position.y = 13.73;
     goalPos.pose.position.z = 0;
     goalPos.pose.orientation.x = 0.0;
     goalPos.pose.orientation.y = 0.0;
-    goalPos.pose.orientation.z = 0.20759190785;
-    goalPos.pose.orientation.w = 0.978215518071;
+    goalPos.pose.orientation.z = -0.2;
+    goalPos.pose.orientation.w = 0.97;
 
     int x;
     std::cout << "0: /initialpose, 1: /goalpose" << std::endl;
